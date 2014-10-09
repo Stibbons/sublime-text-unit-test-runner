@@ -1,0 +1,4 @@
+[
+  { "keys": ["super+shift+r"], "command": "run_an_unit_test" },
+  { "keys": ["super+shift+e"], "command": "run_last_unit_test" }
+]

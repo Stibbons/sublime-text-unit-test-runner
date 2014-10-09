@@ -1,0 +1,20 @@
+[
+  {
+    "id":"tools",
+    "children":[
+      {
+        "caption":"Unit Test Runner",
+        "children":[
+          {
+            "caption":"Run a test",
+            "command":"run_an_unit_test"
+          },
+          {
+            "caption":"Run last test",
+            "command":"run_last_unit_test"
+          }
+        ]
+      }
+    ]
+  }
+]
