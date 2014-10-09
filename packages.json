@@ -6,13 +6,13 @@
             "previous_names": ["Unit Test Runner"],
             "description": "Plugin for running unit tests",
             "author": "Stibbons",
-            "homepage": "https://github.com/stibbons/sublime-text-python-test-runner",
+            "homepage": "https://github.com/stibbons/sublime-text-unit-test-runner",
             "last_modified": "2014-10-09 11:14:00",
             "platforms": {
                 "*": [
                     {
                         "version": "1.0.2",
-                        "url": "https://github.com/stibbons/sublime-text-python-test-runner/zip/v1.0.0"
+                        "url": "https://github.com/stibbons/sublime-text-unit-test-runner/zip/v1.0.0"
                     }
                 ]
             }
