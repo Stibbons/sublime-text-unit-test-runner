@@ -2,7 +2,7 @@
     "schema_version": "1.0",
     "packages": [
         {
-            "name": "UnitTestRunner",
+            "name": "Python Unit Test Runner",
             "previous_names": ["Unit Test Runner"],
             "description": "Plugin for running unit tests",
             "author": "Stibbons",

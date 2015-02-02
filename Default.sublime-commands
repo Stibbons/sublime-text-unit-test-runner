@@ -1,4 +1,5 @@
 [
   { "caption": "Unit Test Runner: Run a test", "command": "run_an_unit_test" },
-  { "caption": "Unit Test Runner: Run last test", "command": "run_last_unit_test" }
+  { "caption": "Unit Test Runner: Run last test", "command": "run_last_unit_test" },
+  { "caption": "Unit Test Runner: Magic run unit test", "command": "magic_find_unit_test" }
 ]

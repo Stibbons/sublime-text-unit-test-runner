@@ -1,20 +1,64 @@
 [
-  {
-    "id":"tools",
-    "children":[
-      {
-        "caption":"Unit Test Runner",
-        "children":[
-          {
-            "caption":"Run a test",
-            "command":"run_an_unit_test"
-          },
-          {
-            "caption":"Run last test",
-            "command":"run_last_unit_test"
-          }
+    {
+        "id": "tools",
+        "children": [
+            {
+                "caption": "Python Unit Test Runner",
+                "children": [
+                    {
+                        "caption": "Run a test",
+                        "command": "run_an_unit_test"
+                    },
+                    {
+                        "caption": "Run last test",
+                        "command": "run_last_unit_test"
+                    },
+                    {
+                        "caption": "Run last test",
+                        "command": "run_last_unit_test"
+                    },
+                    {
+                        "caption": "Magic run unit test",
+                        "command": "magic_find_unit_test"
+                    }
+                ]
+            }
         ]
-      }
-    ]
-  }
+    },
+    {
+        "caption": "Preferences",
+        "mnemonic": "n",
+        "id": "preferences",
+        "children": [
+            {
+                "caption": "Package Settings",
+                "mnemonic": "P",
+                "id": "package-settings",
+                "children": [
+                    {
+                        "caption": "Python Unit Test Runner",
+                        "children": [
+                            {
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/sublime-text-unit-test-runner/PythonUnitTestRunner.sublime-settings"
+                                },
+                                "caption": "Settings – Default"
+                            },
+                            {
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/User/PythonUnitTestRunner.sublime-settings"
+                                },
+                                "caption": "Settings – User"
+                            },
+                            {
+                                "caption": "-"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
 ]

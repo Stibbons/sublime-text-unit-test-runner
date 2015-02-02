@@ -1,7 +1,7 @@
 [
   { "caption": "-" },
   {
-    "caption": "Unit Test Runner",
+    "caption": "Python Unit Test Runner",
     "children":
       [
         { "caption": "Run a test", "command": "run_an_unit_test" },
