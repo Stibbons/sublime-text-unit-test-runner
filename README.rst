@@ -26,3 +26,6 @@ Example:
         "test_command": "trial project_name.module",
         "show_color": true
     }
+
+Now, when I hit ``F5``, I just need to update my trial comman, the ``launcher.bat`` will be
+automatically inserted on the front of my command line.
