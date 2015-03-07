@@ -1,8 +1,13 @@
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
+
+import functools
 import os
 import re
 import sublime
 import sublime_plugin
-import functools
+import sys
 
 DEFAULT_TEST_COMMAND = "nosetests "
 TEST_DELIMETER = ":"
@@ -51,10 +56,16 @@ class RunAnUnitTestCommand(sublime_plugin.TextCommand):
 
     def run_command(self):
         self.output.show_color(self.show_color)
+        if not self.command:
+            raise Exception("Error: empty command")
+        if sys.platform == "win32":
+            cmd = ["cmd", "/K", self.command]
+        else:
+            cmd = ["bash", "-c", self.command]
         self.view.window().run_command(
             "exec",
             {
-                "cmd": ["bash", "-c", self.command],
+                "cmd": cmd,
                 "shell": False,
                 "working_dir": self.test_root,
             }
@@ -63,11 +74,12 @@ class RunAnUnitTestCommand(sublime_plugin.TextCommand):
 
     def load_settings(self):
         self.output = OutputPanel(self.view.window(), Settings())
-        settings = (
-            self.view.window().active_view()
-            .settings().get("python_unit_test_runner")
-        )
-        if settings is None:
+
+        view = sublime.active_window().active_view()
+        settings = view.settings().get('python_unit_test_runner', {}) if view else {}
+        print("view.settings", view.settings().get('python_unit_test_runner'))
+
+        if not settings:
             sublime.error_message(
                 "Python Test Runner:\nYou must add section 'python_unit_test_runner' into "
                 "'settings' section.")

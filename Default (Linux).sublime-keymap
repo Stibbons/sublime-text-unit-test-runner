@@ -1,5 +1,14 @@
 [
-  { "keys": ["shift+f5"], "command": "run_separate_unit_test" },
-  { "keys": ["f5"], "command": "run_last_unit_test" },
-  { "keys": ["ctrl+shift+f5"], "command": "magic_find_unit_test" }
+	{
+		"keys": ["shift+f5"],
+		"command": "run_separate_unit_test"
+	},
+	{
+		"keys": ["f5"],
+		"command": "run_last_unit_test"
+	},
+	{
+		"keys": ["ctrl+shift+f5"],
+		"command": "magic_find_unit_test"
+	}
 ]
